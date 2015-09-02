@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Application</title>
+	<link rel="stylesheet" href="css/style.css" type="text">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/animation.js"></script>
+	<script type="text/javascript" src="js/validation.js"></script>
+</head>
+<body>
+	<div id="container">
+	<h1>Tell us about you!</h1>
+	<form name="myform" onsubmit ="return validateForm()">
+		<ul>
+			<li class="title">Who are you?</li>
+				<li class="fields">
+					<label>*First name</label>
+					<br>
+					<input type="text" id="first_name" class="req">
+					<br>
+					<label>Middle name</label>
+					<br>
+					<input type="text" id="middle_name">
+					<br>
+					<label>Last name</label>
+					<br>
+					<input type="text" id="last_name">
+					<br>
+					<label>*Email</label>
+					<br>
+					<input type="text" id="email" class="req">
+				</li>
+			<li class= "title">Where are you from?</li>
+				<li class="fields">
+					<label>City</label>
+					<br>
+					<input type="text" id="city">
+					<br>
+					<label>*State</label>
+					<br>
+					<input type="text" id="state" class="req">
+					<br>
+					<label>Country</label>
+					<br>
+					<input type="text" id="country">
+				</li>
+			<li class= "title">Where do you work?</li>
+				<li class="fields">
+					<label>*Occupation</label>
+					<br>
+					<input type="text" id="occupation" class="req">
+					<br>
+					<label>Company</label>
+					<br>
+					<input type="text" id="company">
+					<br>
+					<label>Company location</label>
+					<br>
+					<input type="text" id="location">
+				</li>
+
+		</ul>
+			<input type="submit" value="Submit Form" class="button">
+	</form>
+</div>
+</body>
+</html>
